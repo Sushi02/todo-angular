@@ -11,8 +11,8 @@
 		<ul>
 			
 			<div ng-repeat="todo in todos">
-				<input type="checkbox" ng-model="chk"/>
-				{{todo.title}}				
+				<input class="toggle" type="checkbox" ng-model="todo.completed" ng-change="todoCompleted(todo)"/>
+					{{todo.title}}				
 			</div>
 		</ul>	
 		<h>Add New Note</h><br>

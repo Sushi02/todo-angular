@@ -13,5 +13,9 @@ app.controller('mainController',function mainController($scope,todoStorage){
 		todoStorage.put(todos);
 		localStorage.setItem('todo', JSON.stringify(todos));
 		//todoStorage.put(todos);
+	$scope.todoCompleted = function (todo) {
+		
+		todoStorage.put(todos);
+		};
 	};
 })
