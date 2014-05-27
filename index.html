@@ -12,7 +12,8 @@
 			
 			<div ng-repeat="todo in todos">
 				<input class="toggle" type="checkbox" ng-model="todo.completed" ng-change="todoCompleted(todo)"/>
-					{{todo.title}}				
+					{{todo.title}}	
+				<button ng-click="removeTodo(todo)">-</button>			
 			</div>
 		</ul>	
 		<h>Add New Note</h><br>
